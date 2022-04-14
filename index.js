@@ -3,35 +3,25 @@ var toolbox = {
   "contents": [
     {
       "kind": "block",
-      "type": "colour_rgb"
+      "type": "text"
     },
     {
       "kind": "block",
-      "type": "math_number"
+      "type": "colour_rgb"
     },
     {
       "kind": "block",
       "type": "print"
     },
+    {
+      "kind": "block",
+      "type": "math_number"
+    }
   ]
-};
+}
 
-var options = { 
-	toolbox : toolbox, 
-	collapse : false, 
-	comments : false, 
-	disable : false, 
-	maxBlocks : Infinity, 
-	trashcan : false, 
-	horizontalLayout : false, 
-	toolboxPosition : 'start', 
-	css : true, 
-	media : 'https://blockly-demo.appspot.com/static/media/', 
-	rtl : false, 
-	scrollbars : false, 
-	sounds : true, 
-	oneBasedIndex : true
-};
+var workspace = Blockly.inject('blocklyDiv', {toolbox: toolbox});
 
-var workspace = Blockly.inject('blocklyDiv', options);
+
+
 

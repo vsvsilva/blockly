@@ -30,13 +30,19 @@ Blockly.Blocks['colour_rgb'] = {
   }
 };
 
+
+
 var printJson = {
   "type": "print",
-  "message0": "print %1",
+  "message0": "RGB %1 Hexadecimal %2",
   "args0": [
     {
       "type": "input_value",
-      "name": "print"
+      "name": "rgb"
+    },
+    {
+      "type": "input_value",
+      "name": "hexadecimal"
     }
   ],
   "colour": 230,
